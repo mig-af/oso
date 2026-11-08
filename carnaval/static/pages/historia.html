@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Historia · Carnaval de Oruro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../script/tailwind-config.js"></script>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body class="bg-carnaval-crema font-body text-slate-700 antialiased overflow-x-hidden">
+  <!-- <div id="banderines" class="absolute top-0 inset-x-0 flex justify-center gap-1 pt-5 pointer-events-none"></div>
+  
+  <div id="confeti" class="absolute inset-0 pointer-events-none overflow-hidden"></div> -->
+  <header class="top-0 inset-x-0 z-50 bg-white/85 backdrop-blur-md shadow-float-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-5 py-3">
+      <a href="../index.html"><span class="text-3xl anim-latido inline-block"><img class="rounded-xl w-12 h-12 object-cover" src="../assets/oso.png" alt="logo"></span></a>
+      <nav><ul class="flex justify-center gap-7 font-bold text-sm">
+        <li><a class="text-xl hover:text-carnaval-rosa transition" href="../index.html">Inicio</a></li>
+        <li><a class="text-xl text-carnaval-rosa border-b-2 border-carnaval-rosa pb-0.5" href="historia.html">Historia</a></li>
+        <li><a class="text-xl hover:text-carnaval-rosa transition" href="danzas.html">Danzas</a></li>
+        <li><a class="text-xl hover:text-carnaval-rosa transition" href="cronograma.html">Cronograma</a></li>
+        <li><a class="text-xl hover:text-carnaval-rosa transition" href="galeria.html">Galería</a></li>
+      </ul></nav>
+    </div>
+  </header>
+  <section class="relative min-h-[60vh] flex items-center justify-center overflow-hidden">
+    <div class="relative z-10 text-center px-5 pt-28 pb-16 max-w-4xl mx-auto">
+      <h1 class="font-display font-extrabold text-5xl md:text-7xl leading-tight text-slate-800">La <span class="text-carnaval-rosa">historia</span> de<br>nuestra <span class="text-carnaval-violeta">fiesta grande</span></h1>
+      <p class="mt-6 text-lg md:text-xl font-bold text-slate-600 max-w-2xl mx-auto">Setenta años de coplas, máscaras y comparsas. 🎊<br><span class="text-sm">Datos desde <code class="bg-white px-2 py-1 rounded">data/historia.js</code> → <code>HISTORIA</code></span></p>
+    </div>
+    <div class="absolute bottom-6 left-1/2 -translate-x-1/2 text-carnaval-violeta text-2xl anim-flotar">▼</div>
+  </section>
+  <section id="introduccion" class="py-20 px-5 scroll-mt-24">
+    <div class="max-w-6xl mx-auto reveal">
+      <div class="bg-white rounded-[2.5rem] shadow-float-lg overflow-hidden grid lg:grid-cols-5">
+        <div class="lg:col-span-2 relative min-h-[280px]">
+          <img src="../assets/image1.jpg" alt="Banda de bronces de antaño" class="absolute inset-0 w-full h-full object-cover">
+          <span class="absolute top-5 left-5 bg-white/95 rounded-full px-4 py-2 font-display text-carnaval-naranja shadow-float-sm">Archivo · 1974</span>
+        </div>
+        <div class="lg:col-span-3 p-8 md:p-12">
+          <span class="inline-block bg-carnaval-violeta/10 text-carnaval-violeta font-extrabold text-xs uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">📖 Érase una vez…</span>
+          <h2 class="font-display text-4xl md:text-5xl text-slate-800 mb-5">Un pueblo que aprendió a <span class="text-carnaval-rosa">bailar unido</span></h2>
+          <div id="parrafos-intro" class="space-y-4 font-bold text-slate-600 leading-relaxed"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="linea-tiempo" class="py-20 px-5 scroll-mt-24">
+    <div class="max-w-6xl mx-auto reveal">
+      <div class="bg-white rounded-[2.5rem] shadow-float-lg p-8 md:p-12">
+        <div class="text-center mb-8">
+          <span class="inline-block bg-carnaval-rosa/10 text-carnaval-rosa font-extrabold text-xs uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">🕰️ Línea de tiempo</span>
+          <h2 class="font-display text-4xl md:text-5xl text-slate-800">Ocho hitos que hicieron <span class="text-carnaval-teal">carnaval</span></h2>
+        </div>
+        <div id="chips-anios" class="flex flex-wrap justify-center gap-3 mb-12"></div>
+        <div class="relative">
+          <div class="absolute left-4 md:left-1/2 md:-translate-x-1/2 top-0 bottom-0 w-1.5 rounded-full bg-gradient-to-b from-carnaval-rosa via-carnaval-naranja to-carnaval-violeta"></div>
+          <div id="lista-hitos" class="space-y-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="personajes" class="py-20 px-5 scroll-mt-24">
+    <div class="max-w-6xl mx-auto reveal">
+      <div class="bg-white rounded-[2.5rem] shadow-float-lg p-8 md:p-12">
+        <div class="text-center mb-10">
+          <span class="inline-block bg-carnaval-naranja/10 text-carnaval-naranja font-extrabold text-xs uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">🌟 Rostros de la memoria</span>
+          <h2 class="font-display text-4xl md:text-5xl text-slate-800">Personajes <span class="text-carnaval-violeta">inolvidables</span></h2>
+        </div>
+        <div id="tarjetas-personajes" class="grid md:grid-cols-3 gap-8"></div>
+      </div>
+    </div>
+  </section>
+  <section id="curiosidades" class="py-20 px-5 scroll-mt-24">
+    <div class="max-w-6xl mx-auto reveal">
+      <div class="bg-white rounded-[2.5rem] shadow-float-lg p-8 md:p-12">
+        <div class="text-center mb-10">
+          <span class="inline-block bg-carnaval-teal/10 text-carnaval-teal font-extrabold text-xs uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">🤫 Tradiciones y secretos</span>
+          <h2 class="font-display text-4xl md:text-5xl text-slate-800">Curiosidades <span class="text-carnaval-rosa">carnavaleras</span></h2>
+        </div>
+        <div id="tarjetas-curiosidades" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+      </div>
+    </div>
+  </section>
+  <footer class="bg-white border-t-4 border-carnaval-rosa"><div class="max-w-6xl mx-auto px-6 py-8 text-center text-sm font-bold text-slate-500">🎭 Carnaval de Colores · <a class="text-carnaval-rosa hover:underline" href="../index.html">Volver a Inicio</a></div></footer>
+  <button id="btn-subir" class="fixed bottom-6 right-6 z-[60] w-12 h-12 rounded-full bg-gradient-to-r from-carnaval-violeta to-carnaval-rosa text-white text-xl shadow-float-lg opacity-0 pointer-events-none transition-all duration-300">↑</button>
+  <script type="module" src="../script/historia.js"></script>
+</body>
+</html>

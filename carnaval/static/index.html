@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carnaval · Oruro-Bolivia</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- MODIFICADO: config de Tailwind movida a script/tailwind-config.js (antes inline aquí) -->
+  <script src="script/tailwind-config.js"></script>
+
+  <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body class="bg-carnaval-crema font-body text-slate-700 antialiased overflow-x-hidden">
+
+  <!-- ══════════════ MAIN ══════════════ -->
+
+  <section class="min-h-full top-0 inset-x-0 z-50 bg-white/60  shadow-float-sm">
+    <div id="banderines" class="absolute flex flex-wrap top-0 inset-x-0 flex justify-center gap-1 pt-5
+     pointer-events-none"></div>
+
+    <div id="confeti" class="absolute inset-0 pointer-events-none overflow-hidden"></div>
+
+    <div class="-mt-2 min-h-[100vh] max-w-7xl mx-auto flex flex-col items-center  lg:flex-row my-10 x-5 py-4">
+      <a href="index.html" class="flex items-center gap-2">
+        <span class="text-3xl anim-latido inline-block"><img class="rounded-xl" src="./assets/oso.png" alt=""></span>
+      </a>
+      <div class="flex flex-col md:flex-col gap-1 lg:flex-col my-7 gap-y-3">
+        <h1 class=" text-center"><span
+            class="font-display text-5xl font-extrabold tracking-wide text-slate-800 ">Carnaval <span
+              class="text-carnaval-rosa">de</span> <span class="text-carnaval-violeta">Oruro</span></span>
+        </h1>
+        <div class="max-w-6xl mx-auto  px-5 text-center">
+          <!-- <h2 class="font-display font-extrabold text-4xl md:text-5xl text-slate-800">La fiesta grande te espera 🎭</h2> -->
+          <!-- <p class="mt-4 font-bold text-slate-500 max-w-2xl mx-auto">Elige por dónde empezar: memoria, danza, fechas o fotos.
+          </p> -->
+          <div class=" mt-10 grid sm:grid-cols-2 lg:grid-cols-4 gap-6 text-left">
+            <a href="./pages/historia.html"
+              class="bg-white rounded-[2rem] shadow-float-lg p-7 hover:-translate-y-1 hover:shadow-float transition block">
+              <span class="text-4xl">📜</span>
+              <h3 class="font-bold text-2xl text-slate-800 mt-3">Historia</h3>
+              <p class="text-sm font-bold text-slate-500 mt-1">70 años, hitos y personajes.</p>
+            </a>
+            <a href="./pages/danzas.html"
+              class="bg-white rounded-[2rem] shadow-float-lg p-7 hover:-translate-y-1 hover:shadow-float transition block">
+              <span class="text-4xl">💃</span>
+              <h3 class="font-bold text-2xl text-slate-800 mt-3">Danzas</h3>
+              <p class="text-sm font-bold text-slate-500 mt-1">Diablada, morenada y más.</p>
+            </a>
+            <a href="./pages/cronograma.html"
+              class="bg-white rounded-[2rem] shadow-float-lg p-7 hover:-translate-y-1 hover:shadow-float transition block">
+              <span class="text-4xl">🗓️</span>
+              <h3 class="font-bold text-2xl text-slate-800 mt-3">Agenda</h3>
+              <p class="text-sm font-bold text-slate-500 mt-1">Fechas, horas y lugares 2027.</p>
+            </a>
+            <a href="./pages/galeria.html"
+              class="bg-white rounded-[2rem] shadow-float-lg p-7 hover:-translate-y-1 hover:shadow-float transition block">
+              <span class="text-4xl">📸</span>
+              <h3 class="font-bold text-2xl text-slate-800 mt-3">Galería</h3>
+              <p class="text-sm font-bold text-slate-500 mt-1">Postales de ayer y hoy.</p>
+            </a>
+          </div>
+        </div>
+        <!-- <button id="btn-menu" class="lg:hidden text-3xl leading-none text-carnaval-violeta" aria-label="Abrir menú">☰</button>
+     -->
+      </div>
+
+    </div>
+    <div id="menu-movil" class="hidden lg:hidden bg-white border-t border-rose-100 px-6 py-4 space-y-3 font-bold">
+      <a class="block hover:text-carnaval-rosa" href="index.html">Inicio</a>
+      <a class="block hover:text-carnaval-rosa" href="./pages/historia.html">Historia</a>
+      <a class="block hover:text-carnaval-rosa" href="./pages/danzas.html">Danzas</a>
+      <a class="block hover:text-carnaval-rosa" href="./pages/cronograma.html">Cronograma</a>
+      <a class="block hover:text-carnaval-rosa" href="./pages/galeria.html">Galería</a>
+    </div>
+  </section>
+
+  <!-- ══════════════ PORTADA ══════════════ -->
+
+
+  <!--FOOTER-->
+  <footer class="h-12 w-full bg-black">
+    <p class="text-white font-bold flex ">Created by asd</p>
+
+  </footer>
+
+  <!-- Botón subir -->
+  <button id="btn-subir"
+    class="fixed bottom-6 right-6 z-[60] w-12 h-12 rounded-full bg-gradient-to-r from-carnaval-violeta to-carnaval-rosa text-white text-xl shadow-float-lg opacity-0 pointer-events-none transition-all duration-300"
+    aria-label="Volver arriba">↑</button>
+
+  <script type="module">
+    import { initCommon } from './script/common.js';
+    initCommon();
+  </script>
+</body>
+
+</html>

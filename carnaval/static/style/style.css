@@ -1,0 +1,39 @@
+
+html{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* :root{
+    --primary-font-family: 'Open Sans', sans-serif;
+} */
+
+
+/* ===== Sombras flotantes (misma temática que la página principal) ===== */
+.shadow-float    { box-shadow: 0 20px 45px -18px rgba(255,61,138,.28), 0 12px 28px -14px rgba(123,47,242,.18); }
+.shadow-float-lg { box-shadow: 0 35px 80px -25px rgba(255,122,0,.35), 0 18px 40px -18px rgba(255,61,138,.25); }
+.shadow-float-sm { box-shadow: 0 10px 25px -10px rgba(123,47,242,.25); }
+
+/* ===== Animaciones ===== */
+@keyframes confettiCaer { 0% { transform: translateY(-12vh) rotate(0deg); opacity: 1; } 100% { transform: translateY(112vh) rotate(720deg); opacity: .85; } }
+@keyframes flotar { 0%,100% { transform: translateY(0) rotate(-2deg); } 50% { transform: translateY(-14px) rotate(3deg); } }
+@keyframes mecerse { 0%,100% { transform: rotate(-2.5deg); } 50% { transform: rotate(2.5deg); } }
+@keyframes latido { 0%,100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+.anim-flotar { animation: flotar 5s ease-in-out infinite; }
+.anim-mecerse { transform-origin: top center; animation: mecerse 3.5s ease-in-out infinite; }
+.anim-latido { animation: latido 2.2s ease-in-out infinite; }
+
+/* ===== Reveal on scroll ===== */
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity .9s cubic-bezier(.22,1,.36,1), transform .9s cubic-bezier(.22,1,.36,1); }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+.banderin { clip-path: polygon(0 0, 100% 0, 50% 100%); }
+
+/* Destello al saltar a un hito de la línea de tiempo */
+.hito-flash { outline: 4px solid #FF3D8A; outline-offset: 6px; border-radius: 1.75rem; }
+
+::selection { background: #FF3D8A; color: #fff; }
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #FFF8EE; }
+::-webkit-scrollbar-thumb { background: linear-gradient(#FF3D8A,#7B2FF2); border-radius: 99px; }

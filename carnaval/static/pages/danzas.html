@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Danzas · Carnaval de Oruro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="../script/tailwind-config.js"></script>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+<body class="bg-carnaval-crema font-body text-slate-700 antialiased overflow-x-hidden">
+  <!-- <div id="banderines" class="absolute top-0 inset-x-0 flex justify-center gap-1 pt-5 pointer-events-none"></div>
+  <div id="confeti" class="absolute inset-0 pointer-events-none overflow-hidden"></div> -->
+  <header class="top-0 inset-x-0 z-50 bg-white/85 backdrop-blur-md shadow-float-sm">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-5 py-3">
+      <a href="../index.html"><span class="text-3xl anim-latido inline-block"><img class="rounded-xl w-12 h-12 object-cover" src="../assets/oso.png" alt="logo"></span></a>
+      <nav><ul class="flex justify-center gap-7 font-bold text-sm">
+        <li><a class="text-xl hover:text-carnaval-rosa transition" href="../index.html">Inicio</a></li>
+        <li><a class="text-xl hover:text-carnaval-rosa transition" href="historia.html">Historia</a></li>
+        <li><a class="text-xl text-carnaval-rosa border-b-2 border-carnaval-rosa pb-0.5" href="danzas.html">Danzas</a></li>
+        <li><a class="text-xl hover:text-carnaval-rosa transition" href="cronograma.html">Cronograma</a></li>
+        <li><a class="text-xl hover:text-carnaval-rosa transition" href="galeria.html">Galería</a></li>
+      </ul></nav>
+    </div>
+  </header>
+  <section class="relative min-h-[50vh] flex items-center justify-center">
+    <div class="text-center px-5 pt-24 pb-12 max-w-4xl mx-auto">
+      <span class="inline-block bg-carnaval-rosa/10 text-carnaval-rosa font-extrabold text-xs uppercase tracking-widest px-4 py-1.5 rounded-full mb-4">💃 Fraternidades</span>
+      <h1 class="font-display font-extrabold text-5xl md:text-7xl text-slate-800">Danzas que hacen <span class="text-carnaval-violeta">temblar la avenida</span></h1>
+      <p class="mt-4 font-bold text-slate-500">Datos desde <code class="bg-white px-2 py-1 rounded">data/danzas.js</code> → <code>DANZAS</code></p>
+    </div>
+  </section>
+  <section class="py-12 px-5">
+    <div class="max-w-6xl mx-auto reveal">
+      <div id="tarjetas-danzas" class="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+    </div>
+  </section>
+  <footer class="bg-white border-t-4 border-carnaval-rosa"><div class="max-w-6xl mx-auto px-6 py-8 text-center text-sm font-bold text-slate-500">🎭 Carnaval de Colores · <a class="text-carnaval-rosa hover:underline" href="../index.html">Volver a Inicio</a></div></footer>
+  <button id="btn-subir" class="fixed bottom-6 right-6 z-[60] w-12 h-12 rounded-full bg-gradient-to-r from-carnaval-violeta to-carnaval-rosa text-white text-xl shadow-float-lg opacity-0 pointer-events-none transition-all duration-300">↑</button>
+  <script type="module" src="../script/danzas.js"></script>
+</body>
+</html>
