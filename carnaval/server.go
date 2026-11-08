@@ -7,9 +7,11 @@ import (
 
 func main(){
 
+	const RUTA = "./static"
+
 	mux := http.NewServeMux()
 
-	mux.Handle("/", http.FileServer(http.Dir("./static")))
+	mux.Handle("/", http.FileServer(http.Dir(RUTA)))
 
 	server := &http.Server{
 		Addr: ":3006",
